@@ -17,3 +17,7 @@ func withclient(ctx context.Context, client string) context.Context {
 	}
 	return context.WithValue(ctx, contextkey{}, client)
 }
+
+func ClientOverrideFromContext(ctx context.Context) string {
+	
+}
