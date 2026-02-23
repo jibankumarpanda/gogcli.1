@@ -2,15 +2,12 @@ package authclient
 
 import (
 	"context"
-	"fmt"
 	"strings"
-
-	"github.com/jibankumarpanda/gogcli/internal/config"
 )
 
 type contextkey struct{}
 
-func withclient(ctx context.Context, client string) context.Context {
+func WithClient(ctx context.Context, client string) context.Context {
 	client = strings.TrimSpace(client)
 	if client == "" {
 		return ctx
@@ -19,5 +16,11 @@ func withclient(ctx context.Context, client string) context.Context {
 }
 
 func ClientOverrideFromContext(ctx context.Context) string {
-	
+	if ctx == nil {
+		return ""
+	}
+	if v := ctx.Value(contextkey{}); v != nil {
+		return v.(string)
+	}
+	return ""
 }
