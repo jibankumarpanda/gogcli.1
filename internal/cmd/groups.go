@@ -9,10 +9,10 @@ import (
 
 	"google.golang.org/api/cloudidentity/v1"
 
-	"github.com/jibankumarpanda/gogcli/internal/errfmt"
-	"github.com/jibankumarpanda/gogcli/internal/googleapi"
-	"github.com/jibankumarpanda/gogcli/internal/outfmt"
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/errfmt"
+	"github.com/jibankumarpanda/gogcli.1/internal/googleapi"
+	"github.com/jibankumarpanda/gogcli.1/internal/outfmt"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 var newCloudIdentityService = googleapi.NewCloudIdentityGroups

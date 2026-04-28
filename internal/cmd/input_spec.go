@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jibankumarpanda/gogcli/internal/config"
+	"github.com/jibankumarpanda/gogcli.1/internal/config"
 )
 
 // resolveInlineOrFileBytes supports agent-friendly inputs for flags that otherwise

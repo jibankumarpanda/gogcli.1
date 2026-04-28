@@ -7,8 +7,6 @@ import (
 )
 
 const (
-	defaultWatchPath             = "/gmail-pubsub"
-	defaultWatchPort             = 8788
 	defaultHookMaxBytes          = 20000
 	defaultHistoryMaxResults     = 100
 	defaultHistoryResyncMax      = 10

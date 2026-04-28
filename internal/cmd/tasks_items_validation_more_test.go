@@ -7,7 +7,7 @@ import (
 
 	"github.com/alecthomas/kong"
 
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 func parseTasksKong(t *testing.T, cmd any, args []string) *kong.Context {

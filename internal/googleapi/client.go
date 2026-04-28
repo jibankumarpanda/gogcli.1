@@ -14,10 +14,10 @@ import (
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"
 
-	"github.com/jibankumarpanda/gogcli/internal/authclient"
-	"github.com/jibankumarpanda/gogcli/internal/config"
-	"github.com/jibankumarpanda/gogcli/internal/googleauth"
-	"github.com/jibankumarpanda/gogcli/internal/secrets"
+	"github.com/jibankumarpanda/gogcli.1/internal/authclient"
+	"github.com/jibankumarpanda/gogcli.1/internal/config"
+	"github.com/jibankumarpanda/gogcli.1/internal/googleauth"
+	"github.com/jibankumarpanda/gogcli.1/internal/secrets"
 )
 
 const defaultHTTPTimeout = 30 * time.Second

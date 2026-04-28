@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jibankumarpanda/gogcli/internal/config"
-	"github.com/jibankumarpanda/gogcli/internal/googleauth"
-	"github.com/jibankumarpanda/gogcli/internal/outfmt"
-	"github.com/jibankumarpanda/gogcli/internal/secrets"
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/config"
+	"github.com/jibankumarpanda/gogcli.1/internal/googleauth"
+	"github.com/jibankumarpanda/gogcli.1/internal/outfmt"
+	"github.com/jibankumarpanda/gogcli.1/internal/secrets"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 func TestAuthAddCmd_JSON_More(t *testing.T) {

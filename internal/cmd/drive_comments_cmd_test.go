@@ -13,8 +13,8 @@ import (
 	"google.golang.org/api/drive/v3"
 	"google.golang.org/api/option"
 
-	"github.com/jibankumarpanda/gogcli/internal/outfmt"
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/outfmt"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 func TestDriveCommentsListCmd_TextAndJSON(t *testing.T) {

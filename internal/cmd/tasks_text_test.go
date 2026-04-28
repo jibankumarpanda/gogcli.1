@@ -12,7 +12,7 @@ import (
 	"google.golang.org/api/option"
 	"google.golang.org/api/tasks/v1"
 
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 func TestTasks_TextPaths(t *testing.T) {

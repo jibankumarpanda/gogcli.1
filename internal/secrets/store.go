@@ -12,7 +12,7 @@ import (
 	"github.com/99designs/keyring"
 	"golang.org/x/term"
 
-	"github.com/jibankumarpanda/gogcli/internal/config"
+	"github.com/jibankumarpanda/gogcli.1/internal/config"
 )
 
 type Store interface {
@@ -190,7 +190,7 @@ func openKeyring() (keyring.Keyring, error) {
 		// Homebrew upgrades install a new binary with a different hash, causing the
 		// new binary to lose access to existing keychain items. With false, users may
 		// see a one-time keychain prompt after upgrade (click "Always Allow"), but
-		// tokens survive across upgrades. See: https://github.com/jibankumarpanda/gogcli/issues/86
+		// tokens survive across upgrades. See: https://github.com/jibankumarpanda/gogcli.1/issues/86
 		KeychainTrustApplication: false,
 		AllowedBackends:          backends,
 		FileDir:                  keyringDir,

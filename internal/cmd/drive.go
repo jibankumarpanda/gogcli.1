@@ -14,10 +14,10 @@ import (
 	"google.golang.org/api/drive/v3"
 	gapi "google.golang.org/api/googleapi"
 
-	"github.com/jibankumarpanda/gogcli/internal/config"
-	"github.com/jibankumarpanda/gogcli/internal/googleapi"
-	"github.com/jibankumarpanda/gogcli/internal/outfmt"
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/config"
+	"github.com/jibankumarpanda/gogcli.1/internal/googleapi"
+	"github.com/jibankumarpanda/gogcli.1/internal/outfmt"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 var newDriveService = googleapi.NewDrive

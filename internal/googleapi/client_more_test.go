@@ -13,9 +13,9 @@ import (
 	"github.com/99designs/keyring"
 	"golang.org/x/oauth2"
 
-	"github.com/jibankumarpanda/gogcli/internal/config"
-	"github.com/jibankumarpanda/gogcli/internal/googleauth"
-	"github.com/jibankumarpanda/gogcli/internal/secrets"
+	"github.com/jibankumarpanda/gogcli.1/internal/config"
+	"github.com/jibankumarpanda/gogcli.1/internal/googleauth"
+	"github.com/jibankumarpanda/gogcli.1/internal/secrets"
 )
 
 var (

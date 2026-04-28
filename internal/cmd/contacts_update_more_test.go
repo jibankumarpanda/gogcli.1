@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 func TestContactsUpdate_BirthdayAndNotes_Set(t *testing.T) {

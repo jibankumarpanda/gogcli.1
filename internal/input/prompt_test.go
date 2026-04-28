@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 func TestPromptLineFrom(t *testing.T) {

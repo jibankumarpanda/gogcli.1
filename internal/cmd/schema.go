@@ -9,7 +9,7 @@ import (
 
 	"github.com/alecthomas/kong"
 
-	"github.com/jibankumarpanda/gogcli/internal/outfmt"
+	"github.com/jibankumarpanda/gogcli.1/internal/outfmt"
 )
 
 type SchemaCmd struct {

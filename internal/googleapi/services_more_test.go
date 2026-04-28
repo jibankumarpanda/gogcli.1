@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jibankumarpanda/gogcli/internal/config"
-	"github.com/jibankumarpanda/gogcli/internal/secrets"
+	"github.com/jibankumarpanda/gogcli.1/internal/config"
+	"github.com/jibankumarpanda/gogcli.1/internal/secrets"
 )
 
 func TestNewServicesWithStoredToken(t *testing.T) {

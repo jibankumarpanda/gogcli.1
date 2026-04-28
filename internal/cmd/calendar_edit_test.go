@@ -6,7 +6,7 @@ import (
 
 	"github.com/alecthomas/kong"
 
-	"github.com/jibankumarpanda/gogcli/internal/googleauth"
+	"github.com/jibankumarpanda/gogcli.1/internal/googleauth"
 )
 
 func parseKongContext(t *testing.T, cmd any, args []string) *kong.Context {

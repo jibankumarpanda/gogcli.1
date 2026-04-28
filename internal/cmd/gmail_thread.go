@@ -19,9 +19,9 @@ import (
 	"golang.org/x/text/encoding/ianaindex"
 	"google.golang.org/api/gmail/v1"
 
-	"github.com/jibankumarpanda/gogcli/internal/config"
-	"github.com/jibankumarpanda/gogcli/internal/outfmt"
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/config"
+	"github.com/jibankumarpanda/gogcli.1/internal/outfmt"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 // HTML stripping patterns for cleaner text output.

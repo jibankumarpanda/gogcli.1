@@ -14,9 +14,9 @@ import (
 	"google.golang.org/api/gmail/v1"
 	"google.golang.org/api/option"
 
-	"github.com/jibankumarpanda/gogcli/internal/outfmt"
-	"github.com/jibankumarpanda/gogcli/internal/tracking"
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/outfmt"
+	"github.com/jibankumarpanda/gogcli.1/internal/tracking"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 func TestSendGmailBatches_WithTracking(t *testing.T) {

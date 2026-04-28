@@ -11,9 +11,9 @@ import (
 
 	"google.golang.org/api/gmail/v1"
 
-	"github.com/jibankumarpanda/gogcli/internal/googleapi"
-	"github.com/jibankumarpanda/gogcli/internal/outfmt"
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/googleapi"
+	"github.com/jibankumarpanda/gogcli.1/internal/outfmt"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 var newGmailService = googleapi.NewGmail

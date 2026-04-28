@@ -8,8 +8,8 @@ import (
 
 	"google.golang.org/api/drive/v3"
 
-	"github.com/jibankumarpanda/gogcli/internal/outfmt"
-	"github.com/jibankumarpanda/gogcli/internal/ui"
+	"github.com/jibankumarpanda/gogcli.1/internal/outfmt"
+	"github.com/jibankumarpanda/gogcli.1/internal/ui"
 )
 
 // DocsCommentsCmd is the parent command for comment operations on a Google Doc.

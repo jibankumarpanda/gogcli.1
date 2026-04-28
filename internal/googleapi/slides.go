@@ -6,7 +6,7 @@ import (
 
 	"google.golang.org/api/slides/v1"
 
-	"github.com/jibankumarpanda/gogcli/internal/googleauth"
+	"github.com/jibankumarpanda/gogcli.1/internal/googleauth"
 )
 
 func NewSlides(ctx context.Context, email string) (*slides.Service, error) {

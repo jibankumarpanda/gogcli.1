@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/jibankumarpanda/gogcli/internal/tracking"
+	"github.com/jibankumarpanda/gogcli.1/internal/tracking"
 )
 
 func loadTrackingConfigForAccount(flags *RootFlags) (string, *tracking.Config, error) {

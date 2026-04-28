@@ -9,7 +9,7 @@ import (
 
 	"google.golang.org/api/classroom/v1"
 
-	"github.com/jibankumarpanda/gogcli/internal/timeparse"
+	"github.com/jibankumarpanda/gogcli.1/internal/timeparse"
 )
 
 func wrapClassroomError(err error) error {

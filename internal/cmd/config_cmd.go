@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jibankumarpanda/gogcli/internal/config"
-	"github.com/jibankumarpanda/gogcli/internal/outfmt"
+	"github.com/jibankumarpanda/gogcli.1/internal/config"
+	"github.com/jibankumarpanda/gogcli.1/internal/outfmt"
 )
 
 type ConfigCmd struct {

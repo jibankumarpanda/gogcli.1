@@ -9,7 +9,7 @@ import (
 	"google.golang.org/api/keep/v1"
 	"google.golang.org/api/option"
 
-	"github.com/jibankumarpanda/gogcli/internal/googleauth"
+	"github.com/jibankumarpanda/gogcli.1/internal/googleauth"
 )
 
 func NewKeep(ctx context.Context, email string) (*keep.Service, error) {
