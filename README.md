@@ -1,16 +1,9 @@
 # 🪶 gogcli — Google in your terminal.
 
+![gogcli Banner](banner.png)
 
-Fast, script-friendly CLI for Gmail, Calendar, Chat, Classroom, Drive, Docs, Slides, Sheets, Forms, Apps Script, Contacts, Tasks, People, Groups (Workspace), and Keep (Workspace-only). JSON-first output, multiple accounts, and least-privilege auth built in.
+Fast, script-friendly CLI for Gmail, Calendar, Chat, Classroom, Drive, Docs, Slides, Sheets, Forms, Apps Script, Contacts, Tasks, People, Groups (Workspace), and Keep (Workspace-only).
 
-## Features
-
-- **Gmail** - search threads and messages, send emails, view attachments, manage labels/drafts/filters/delegation/vacation settings, history, and watch (Pub/Sub push)
-- **Email tracking** - track opens for `gog gmail send --track` with a small Cloudflare Worker backend
-- **Calendar** - list/create/update events, detect conflicts, manage invitations, check free/busy status, team calendars, propose new times, focus/OOO/working-location events, recurrence + reminders
-- **Classroom** - manage courses, roster, coursework/materials, submissions, announcements, topics, invitations, guardians, profiles
-- **Chat** - list/find/create spaces, list messages/threads (filter by thread/unread), send messages and DMs (Workspace-only)
-- **Drive** - list/search/upload/download files, manage permissions/comments, organize folders, list shared drives
 - **Contacts** - search/create/update contacts, access Workspace directory/other contacts
 - **Tasks** - manage tasklists and tasks: get/create/add/update/done/undo/delete/clear, repeat schedules
 - **Sheets** - read/write/update spreadsheets, insert rows/cols, format cells, read notes, create new sheets (and export via Drive)
@@ -470,6 +463,20 @@ gog --enable-commands calendar,tasks calendar events --today
 export GOG_ENABLE_COMMANDS=calendar,tasks
 gog tasks list <tasklistId>
 ```
+ 
+## Troubleshooting
+ 
+### Error 403: access_denied
+If you see this error during `auth add`, it means your Google Cloud project is in **"Testing"** mode and your email hasn't been authorized yet.
+ 
+1.  Go to the [Google Cloud Console](https://console.cloud.google.com/).
+2.  Navigate to **APIs & Services** > **OAuth consent screen**.
+3.  Scroll down to **Test users** and click **+ ADD USERS**.
+4.  Add your email address and click **Save**.
+5.  Retry the `gog auth add` command.
+ 
+### App Not Verified Warning
+When you log in, Google may show a "Google hasn't verified this app" warning. This is normal for private tools. Click **Advanced** and then **Go to gogcli (unsafe)** to continue.
  
 ## Security
 
