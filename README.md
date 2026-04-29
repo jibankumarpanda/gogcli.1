@@ -1,6 +1,6 @@
 # 🪶 gogcli — Google in your terminal.
 
-![gogcli Banner](banner.png)
+![gogcli Banner](banner.png.png)
 
 Fast, script-friendly CLI for Gmail, Calendar, Chat, Classroom, Drive, Docs, Slides, Sheets, Forms, Apps Script, Contacts, Tasks, People, Groups (Workspace), and Keep (Workspace-only).
 
