@@ -35,7 +35,7 @@ func main() {
 
 		if bytes.Contains(content, []byte(oldStr)) {
 			newContent := bytes.ReplaceAll(content, []byte(oldStr), []byte(newStr))
-			err = os.WriteFile(path, newContent, 0644)
+			err = os.WriteFile(path, newContent, 0o644)
 			if err != nil {
 				return err
 			}
@@ -43,7 +43,6 @@ func main() {
 		}
 		return nil
 	})
-
 	if err != nil {
 		panic(err)
 	}
