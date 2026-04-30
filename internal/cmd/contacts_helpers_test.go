@@ -109,11 +109,11 @@ func TestParseCustomUserDefined_InvalidInput(t *testing.T) {
 }
 
 func TestParseCustomUserDefined_ValidInput(t *testing.T) {
-	fields, clear, err := parseCustomUserDefined([]string{"team=devops", " repo = gog"}, false)
+	fields, shouldClear, err := parseCustomUserDefined([]string{"team=devops", " repo = gog"}, false)
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
-	if clear {
+	if shouldClear {
 		t.Fatalf("did not expect clear")
 	}
 	if len(fields) != 2 || fields[0].Key != "team" || fields[0].Value != "devops" || fields[1].Key != "repo" || fields[1].Value != "gog" {
@@ -122,11 +122,11 @@ func TestParseCustomUserDefined_ValidInput(t *testing.T) {
 }
 
 func TestParseCustomUserDefined_ClearAll(t *testing.T) {
-	fields, clear, err := parseCustomUserDefined([]string{""}, true)
+	fields, shouldClear, err := parseCustomUserDefined([]string{""}, true)
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
-	if !clear {
+	if !shouldClear {
 		t.Fatalf("expected clear")
 	}
 	if len(fields) != 0 {
