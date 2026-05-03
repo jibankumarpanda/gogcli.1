@@ -31,7 +31,7 @@ func main() {
 			return nil
 		}
 
-		content, err := os.ReadFile(path) // #nosec G304 -- paths come from filepath.WalkDir over local repo tree
+		content, err := os.ReadFile(path) // #nosec G304,G122 -- local maintenance script; paths are repo-local WalkDir inputs
 		if err != nil {
 			return fmt.Errorf("read %q: %w", path, err)
 		}
@@ -39,7 +39,7 @@ func main() {
 		if bytes.Contains(content, []byte(oldStr)) {
 			newContent := bytes.ReplaceAll(content, []byte(oldStr), []byte(newStr))
 
-			err = os.WriteFile(path, newContent, 0o600) // #nosec G306 -- utility script output
+			err = os.WriteFile(path, newContent, 0o600) // #nosec G306,G703,G122 -- local maintenance script writes to walked repo paths
 			if err != nil {
 				return fmt.Errorf("write %q: %w", path, err)
 			}
